@@ -13,6 +13,8 @@ for (let i = 0; i < 2; i++) {
     b != ''
   ) {
     expenses[a] = b;
+  } else {
+    i--;
   }
 }
 
@@ -25,4 +27,6 @@ let appData = {
   savings: false,
 };
 
-alert(money / 30);
+appData.moneyPerDay = appData.budje / 30;
+
+alert(appData.moneyPerDay);
